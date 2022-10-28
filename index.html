@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -9,32 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Primeiro B</title>
     <script src="estudo.js"></script>
+    <link rel="stylesheet" href="geral.css">
 </head>
 
 <body>
-   <div class="calculadora">
-    <span id="totalgeral">Total: 0,00</span>
-    Valor: <input id="Valor" type="text"><br>
-    Juros(Mensais): <input id="Juros" type="text"><br>
-    Nr Meses: <input id="Meses" type="text"><br>
-    <button onclick="total()">Enviar</button>
-    </div>
-    </div>
-    <span id="mes">Meses</span>
 
+    <div class="calculadora">
+    <div id="sptotalgeral">
+        <span id="totalgeral">Total: 0,00</span><br>
+    </div>
+
+        Valor: <input id="Valor" placeholder="R$" type="text"><br>
+        Juros(Mensais): <input id="Juros" placeholder="% mes" type="text"><br>
+        Nr Meses: <input id="Meses" placeholder="tempo" type="text"><br>
+        <button onclick="total()">Enviar</button>
+    </div>
+    <div>
+        <span id="mes">Meses</span>
+    </div>
     <br><br><br><br>
-    <span id="result">Resultado 0,0 </span><br>
-    Primeiro Numero: <input id="n1" type=text><br>
-    Segundo Numero: <input id="n2" type=text><br>
-    Terceiro Numero: <input id="n3" type=text><br>
-    Quarto Numero: <input id="n4" type=text><br>
 
-    <button onclick="media()">Calcular a media</button>
+    <span id="resul">Resultado 0,00</span><br>
 
-    ....
+    Primeiro numero : <input id="n1" type="text"><br>
+    Segundo numero : <input id="n2" type="text"><br>
+    Terceiro numero : <input id="n3" type="text"><br>
+    Quarto numero: <input id="n4" type="text"><br>
+
+    <button onclick="media()">Calcular a Média</button><br>
+    <button onclick="somar()">Calcular a Soma</button><br>
+    <button onclick="diminuir()">Calcular a Diminuição</button><br>
+    <button onclick="multiplicar()"> Calcular a Multiplicação</button><br>
 
 </body>
 
 </html>
+
 
 
